@@ -80,15 +80,9 @@ var team2 = [];
 var number;
 for (i = 0; i < 5; i++){
   	number = Math.floor(Math.random() * heroes.length);
-	if(heroes[number]=="Чо’Галл" && i == 4){
-		number = Math.floor(Math.random() * heroes.length);
-	}
   	team1.push(heroes.splice(number,1));  
 	
   	number = Math.floor(Math.random() * heroes.length);
-	if(heroes[number]=="Чо’Галл" && i == 4){
-		number = Math.floor(Math.random() * heroes.length);
-	}
   	team2.push(heroes.splice(number,1));
 }
 if(team1[4]=="Чо’Галл"){
