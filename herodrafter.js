@@ -32,7 +32,7 @@ team1.foreach(function(item){
 	olTeam1.appendChild(document.createElement('li').innerHTML=item);
 });
 	   
-//document.write("<h2>Team 1:</h2>" + team1 + "\n");
-//document.write("<h2>Team 2:</h2>" + team2 + "\n");
-//document.write("<h2>Map:</h2>" + map);
+document.write("<h2>Team 1:</h2>" + team1 + "\n");
+document.write("<h2>Team 2:</h2>" + team2 + "\n");
+document.write("<h2>Map:</h2>" + map);
 }
