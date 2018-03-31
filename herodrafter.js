@@ -91,5 +91,11 @@ for (i = 0; i < 5; i++){
 	}
   	team2.push(heroes.splice(number,1));
 }
+if(team1[4]=="Чо’Галл"){
+	team1.shift();
+}
+if(team2[4]=="Чо’Галл"){
+	team1.shift();
+}
 document.write("<h1>Team 1:</h1>" + team1 + "\n");
 document.write("<h1>Team 2:</h1>" + team2);
