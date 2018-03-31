@@ -95,7 +95,7 @@ if(team1[4]=="Чо’Галл"){
 	team1.shift();
 }
 if(team2[4]=="Чо’Галл"){
-	team1.shift();
+	team2.shift();
 }
 document.write("<h1>Team 1:</h1>" + team1 + "\n");
 document.write("<h1>Team 2:</h1>" + team2);
