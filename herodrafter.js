@@ -1,3 +1,5 @@
+var maps = ["Башни рока", "Бойня на браксисе", "Вечная битва", "Гробница королевы пауков", "Драконий край", "Завод Вольской", 
+	   "Небесный храм", "Осквернённое святилище", "Призрачные копи", "Проклятая лощина", "Сад ужасов", "Ядерный полигон"]
 var heroes = ["D.Va",
 "E.T.C.",
 "Абатур",
@@ -78,6 +80,7 @@ var heroes = ["D.Va",
 var team1 = [];
 var team2 = [];
 var number;
+var map = maps[Math.floor(Math.random() * maps.length)];
 for (i = 0; i < 5; i++){
   	number = Math.floor(Math.random() * heroes.length);
   	team1.push(heroes.splice(number,1));  
@@ -92,4 +95,5 @@ if(team2[4]=="Чо’Галл"){
 	team2.shift();
 }
 document.write("<h1>Team 1:</h1>" + team1 + "\n");
-document.write("<h1>Team 2:</h1>" + team2);
+document.write("<h1>Team 2:</h1>" + team2 + "\n");
+document.write("<h1>Map:</h1>" + map);
