@@ -19,7 +19,7 @@ var heroes = ["D.Va",
 "Гэндзи",
 "Дехака",
 "Джайна",
-"Джим-Рейнор",
+"Джим Рейнор",
 "Джоанна",
 "Диабло",
 "Загара",
@@ -33,9 +33,9 @@ var heroes = ["D.Va",
 "Кель’тас",
 "Керриган",
 "Крысавчик",
-"Лейтенант-Моралес",
+"Лейтенант Моралес",
 "Леорик",
-"Ли-Ли",
+"Ли Ли",
 "Ли-Мин",
 "Лунара",
 "Лусио",
@@ -48,7 +48,7 @@ var heroes = ["D.Va",
 "Мясник",
 "Назибо",
 "Нова",
-"Потерявшиеся-викинги",
+"Потерявшиеся викинги",
 "Пробиус",
 "Рагнарос",
 "Регар",
@@ -56,7 +56,7 @@ var heroes = ["D.Va",
 "Самуро",
 "Светик",
 "Седогрив",
-"Сержант-Кувалда",
+"Сержант Кувалда",
 "Сильвана",
 "Соня",
 "Стежок",
@@ -79,12 +79,11 @@ var team1 = [];
 var team2 = [];
 var number;
 for (i = 0; i < 5; i++){
-	number = Math.floor(Math.random() * heroes.length);
-  team1.push(heroes.splice(number,1));  
-    //document.getElementById("team1").innerHTML
+  number = Math.floor(Math.random() * heroes.length);
+  team1.push(heroes.splice(number,1)+" ");  
 	
-	number = Math.floor(Math.random() * heroes.length);
-  team2.push(heroes.splice(number,1));
+  number = Math.floor(Math.random() * heroes.length);
+  team2.push(heroes.splice(number,1)+" ");
 }
-document.write("<h1>Team 1:</h1>" + team1+"\n");
+document.write("<h1>Team 1:</h1>" + team1 + "\n");
 document.write("<h1>Team 2:</h1>" + team2);
