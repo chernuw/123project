@@ -80,10 +80,10 @@ var team2 = [];
 var number;
 for (i = 0; i < 5; i++){
   number = Math.floor(Math.random() * heroes.length);
-  team1.push(heroes.splice(number,1)+" ");  
+  team1.push(heroes.splice(number,1));  
 	
   number = Math.floor(Math.random() * heroes.length);
-  team2.push(heroes.splice(number,1)+" ");
+  team2.push(heroes.splice(number,1));
 }
 document.write("<h1>Team 1:</h1>" + team1 + "\n");
 document.write("<h1>Team 2:</h1>" + team2);
