@@ -25,13 +25,7 @@ if(team1[4]=="Чо’Галл"){
 if(team2[4]=="Чо’Галл"){
 	team2.shift();
 }
-var olTeam1 = document.getElementById("team1");
-var olTeam2 = document.getElementById("team2");
-var ulMap = document.getElementById("map");
-/*team1.foreach(function(item){
-	olTeam1.appendChild(document.createElement('li').innerHTML=item);
-});
-*/	   
+	   
 document.write("<h2>Team 1:</h2>" + team1 + "\n");
 document.write("<h2>Team 2:</h2>" + team2 + "\n");
 document.write("<h2>Map:</h2>" + map);
