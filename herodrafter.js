@@ -18,12 +18,27 @@ for (i = 0; i < 5; i++){
   	number = Math.floor(Math.random() * heroes.length);
   	team2.push(heroes.splice(number,1));
 }
-if(team1[4]=="Чо’Галл"){
+if(team1.includes("Чо’Галл")){
+	if(team1[0]=="Чо’Галл"){
+		team1.pop();
+	}else{
+		team1.shift();
+	}
+}
+if(team2.includes("Чо’Галл")){
+	if(team2[0]=="Чо’Галл"){
+		team2.pop();
+	}else{
+		team2.shift();
+	}
+}	
+	
+/*if(team1[4]=="Чо’Галл"){
 	team1.shift();
 }
 if(team2[4]=="Чо’Галл"){
 	team2.shift();
-}
+}*/
 var olTeam1 = document.getElementById("team1");
 var olTeam2 = document.getElementById("team2");
 var ulMap = document.getElementById("map");
